@@ -30,6 +30,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.6'
+  gem 'guard-rspec'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -51,3 +54,6 @@ gem "font-awesome-rails"
 gem "jquery-rails"
 gem 'omniauth'
 gem 'omniauth-facebook', '~> 4.0.0'
+gem 'trestle'
+
+gem 'simplecov', :require => false, :group => :test
